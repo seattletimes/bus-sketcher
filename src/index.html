@@ -1,0 +1,61 @@
+<%
+var movies = json.BusRiderSketches_movies.filter(function(row) { return !row.filter });
+%><!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <%= t.include("partials/_head.html") %>
+  </head>
+  <body>
+
+    <%= t.include("partials/_nav.html") %>
+
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
+    <main class="sketch-page">
+
+      <h1>Bus sketches: they're amazing, yo</h1>
+
+      <p class="chatter">A commute, a visit to friends or parents, a lift to school. A ride on a Metro bus can be a lot of things.
+
+      <p class="chatter">And the people riding them can be a lot of things, too.
+
+      <p class="chatter">Travel with us as we meet the denizens of Seattle’s mass transit. Watch their portraits come alive as they tell you their transit loves, their nightmares — and their hopes for the city’s transit future.
+
+      <section class="sketches">
+
+        <% movies.forEach(function(row) { %>
+        <div class="sketch">
+          <div class="icon">
+            <img src="./assets/ic_headset_black_48px.svg"> watch
+          </div>
+          <div class="video-container">
+            <video class="video-sketch" poster="./assets/posters/<%= row.poster %>">
+              <source type="video/mp4" src="./assets/movies/<%= row.file %>"></source>
+            </video>
+            <img class="poster" src="./assets/posters/<%= row.poster %>">
+          </div>
+          <div class="caption">
+            <h2><%= row.name %></h2>
+            <p class="interviewed"><%= row.route %></p>
+            <p class="description"><%= row.description %></p>
+          </div>
+        </div>
+        <% }) %>
+
+      </section>
+
+    </main>
+
+    <%= t.include("partials/_navBottom.html") %>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+[
+  {
+    "Order": 1,
+    "file": "brooks.mp4",
+    "name": "Jim Brooks",
+    "poster": "jim.jpg",
+    "route": "On the #25 bus"
+  },
+  {
+    "Order": 2,
+    "file": "tillie.mp4",
+    "name": "Tillie Warren",
+    "poster": "tillie.jpg",
+    "route": "Waiting for D-Line",
+    "description": "Tillie Warren, 45, lived on the streets when she arrived in Seattle a few months ago after leaving South Carolina. She wanted to find prosperity here. But no one told her about the city’s “chronic homelessness.” Then she became a part of it."
+  },
+  {
+    "Order": 3,
+    "file": "kyleleitch.mp4",
+    "name": "Kyle Leitch",
+    "poster": "kyle.jpg",
+    "route": "On the C-Line",
+    "description": "This city has some growing up to do, said Kyle Leitch, 26, a Cornish College student. He and his partner live in Magnolia and hope for a light-rail station in Ballard. The city needs more transportation like it to keep growing, he said."
+  },
+  {
+    "Order": 4,
+    "file": "imogene.mp4",
+    "name": "Imogene Williams",
+    "poster": "imogene.jpg",
+    "route": "On the #8 bus"
+  },
+  {
+    "Order": 5,
+    "file": "benhamou.mp4",
+    "name": "David Benhamou",
+    "poster": "david.jpg",
+    "route": "On the #44 bus"
+  },
+  {
+    "Order": 6,
+    "file": "maria.mp4",
+    "name": "Maria Escobar",
+    "poster": "maria.jpg",
+    "route": "On the #5 bus",
+    "description": "On her way to Bellevue, to attend a Bible study, Maria Escobar said she cherishes time with her 14-year-old son more than anything. Sometimes on the weekend he’ll ride the bus with him — she calls it “mom and son” time. One unforgettable experience on the bus tugged at her motherly heart."
+  },
+  {
+    "Order": 7,
+    "file": "cathydao.mp4",
+    "name": "Cathy Dao",
+    "poster": "cathy.jpg",
+    "route": "On the C-Line",
+    "description": "Nearly everyday Cathy Dao, of Columbia City, rides the city’s light rail to work. Once a week she rides the C-Line to visit her parents in West Seattle, where she grew up. Even if she owned a car, she wouldn’t drive because of the city’s “untenable traffic.”"
+  },
+  {
+    "Order": 8,
+    "file": "teddi.mp4",
+    "name": "Teddi Whillans",
+    "poster": "teddi.jpg",
+    "route": "On the #5 to the E-Line",
+    "description": "Graphic designer Teddi Whillans, 23, loves to people watch on her long commute from West Seattle to North Aurora Avenue. And she’s got some stories to tell about her travels. “I’ve had some pretty crazy experiences,” she said."
+  },
+  {
+    "Order": 9,
+    "file": "vo.mp4",
+    "name": "Quan Vo",
+    "poster": "quan.jpg",
+    "route": "On the #48 bus"
+  },
+  {
+    "Order": 10,
+    "file": "bolstad.mp4",
+    "name": "Amelia Bolstad",
+    "poster": "amelia.jpg",
+    "route": "On the #44 bus"
+  },
+  {
+    "Order": 11,
+    "file": "janssen.mp4",
+    "name": "Don Janssen",
+    "poster": "don.jpg",
+    "route": "On the #44 bus"
+  }
+]

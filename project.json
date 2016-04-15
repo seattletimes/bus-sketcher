@@ -1,0 +1,21 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "uncomplimentary-spectator"
+    },
+    "live": {
+      "bucket": "",
+      "path": ""
+    }
+  },
+  "title": "",
+  "description": "",
+  "url": "",
+  "slug": "",
+  "tags": [],
+  "image": "assets/social.jpg",
+  "sheets": ["14mYlsxH7tcXiGGWXGAU6LDQ9LDtlQ_Hl26zUESuZrsQ"],
+  "production": false,
+  "embedded": true
+}
