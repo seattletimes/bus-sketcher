@@ -32,7 +32,7 @@ Object.keys(json.BusRiderSketches_strings).forEach(function(k) { strings[k] = js
             <video class="video-sketch" poster="./assets/posters/<%= row.poster %>">
               <source type="video/mp4" src="./assets/movies/<%= row.file %>"></source>
             </video>
-            <img class="poster" src="./assets/posters/<%= row.poster %>">
+            <img class="poster" src="./assets/posters/<%= row.poster %>" alt="<%= row.name %>">
             <canvas class="spinner" width=16 height=16></canvas>
           </div>
           <div class="caption">
@@ -46,7 +46,7 @@ Object.keys(json.BusRiderSketches_strings).forEach(function(k) { strings[k] = js
       </section>
 
     </main>
-    
+
 
     <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
