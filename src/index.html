@@ -15,8 +15,6 @@ Object.keys(json.BusRiderSketches_strings).forEach(function(k) { strings[k] = js
 
     <%= t.include("partials/_nav.html") %>
 
-    <%= t.include("partials/_ad.html", { type: "banner" }) %>
-
     <main class="sketch-page">
 
       <h1><%= strings.title %></h1>
@@ -48,6 +46,9 @@ Object.keys(json.BusRiderSketches_strings).forEach(function(k) { strings[k] = js
       </section>
 
     </main>
+    
+
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
     <%= t.include("partials/_navBottom.html") %>
 
