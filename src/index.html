@@ -48,7 +48,18 @@ Object.keys(json.BusRiderSketches_strings).forEach(function(k) { strings[k] = js
     </main>
 
 
-    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+    <div class="recirc">
+      <%= t.include("partials/_dontMiss.html", { data: [
+        { url: "http://www.seattletimes.com/seattle-news/data/seattle-sees-biggest-jump-in-bus-riders-of-any-us-city/", head: "Seattle sees biggest jump in bus riders of any U.S. city", image: "teasers/fyi-guy.jpg" },
+        { url: "http://www.seattletimes.com/seattle-news/transportation/king-county-metro-bus-driver-logs-many-miles-and-smiles/", head: "King County Metro bus driver logs many miles — and smiles", image: "teasers/driver.jpg" },
+        { url: "http://www.seattletimes.com/seattle-news/transportation/no-seat-hogging-and-11-other-bus-etiquette-tips-from-our-readers/", head: "No seat hogging! — and 11 other bus-etiquette tips from our readers", image: "teasers/tips.jpg" },
+        { url: "http://www.seattletimes.com/entertainment/how-many-songs-can-you-fit-on-a-bus-a-kexp-dj-curated-playlist-for-your-metro-trips/", head: "How many songs can you fit on a bus?", image: "teasers/band.jpg" }
+      ]}) %>
+
+      <%= t.include("partials/_ad.html", { type: "banner" }) %>
+      
+    </div>
+
 
     <%= t.include("partials/_navBottom.html") %>
 
