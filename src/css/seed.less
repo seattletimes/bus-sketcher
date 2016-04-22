@@ -17,6 +17,7 @@ main.sketch-page {
 
   h1 {
     text-align: center;
+    font-size: 40px;
   }
 
   .chatter {
@@ -56,11 +57,27 @@ main.sketch-page {
     height: 100%;
   }
 
+  .spinner {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: white;
+    opacity: 0;
+    z-index: 999;
+    border-radius: 50%;
+    background: @df-off-white;
+    transition: all .5s linear;
+  }
+
   &.playing {
     video {
       opacity: 1;
-      z-index: 999;
+      z-index: 99;
     }
+  }
+
+  &.show-spinner .spinner {
+    opacity: 1;
   }
 
 }
@@ -87,12 +104,13 @@ main.sketch-page {
       position: absolute;
       top: 0;
       right: 0;
-      opacity: .8;
+      opacity: 0;
       z-index: 99;
       transition: all .2s linear;
       padding: 8px;
       text-transform: uppercase;
-      color: black;
+      color: white;
+      font-size: 13px;
 
       img {
         width: 16px;
@@ -121,7 +139,7 @@ main.sketch-page {
 
     &:hover {
       .icon {
-        opacity: 0;
+        opacity: 1;
       }
 
       .caption {

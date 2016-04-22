@@ -1,5 +1,7 @@
 <%
 var movies = json.BusRiderSketches_movies.filter(function(row) { return !row.filter });
+var strings = {};
+Object.keys(json.BusRiderSketches_strings).forEach(function(k) { strings[k] = json.BusRiderSketches_strings[k].text });
 %><!doctype html>
 <html>
   <head>
@@ -17,26 +19,23 @@ var movies = json.BusRiderSketches_movies.filter(function(row) { return !row.fil
 
     <main class="sketch-page">
 
-      <h1>Bus sketches: they're amazing, yo</h1>
+      <h1><%= strings.title %></h1>
 
-      <p class="chatter">A commute, a visit to friends or parents, a lift to school. A ride on a Metro bus can be a lot of things.
-
-      <p class="chatter">And the people riding them can be a lot of things, too.
-
-      <p class="chatter">Travel with us as we meet the denizens of Seattle’s mass transit. Watch their portraits come alive as they tell you their transit loves, their nightmares — and their hopes for the city’s transit future.
+      <p class="chatter"><%= strings.chatter %></p>
 
       <section class="sketches">
 
         <% movies.forEach(function(row) { %>
         <div class="sketch">
           <div class="icon">
-            <img src="./assets/ic_headset_black_48px.svg"> watch
+            <img src="./assets/ic_headset_black_48px.svg"> Watch
           </div>
           <div class="video-container">
             <video class="video-sketch" poster="./assets/posters/<%= row.poster %>">
               <source type="video/mp4" src="./assets/movies/<%= row.file %>"></source>
             </video>
             <img class="poster" src="./assets/posters/<%= row.poster %>">
+            <canvas class="spinner" width=16 height=16></canvas>
           </div>
           <div class="caption">
             <h2><%= row.name %></h2>

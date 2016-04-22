@@ -5,17 +5,17 @@
       "path": "uncomplimentary-spectator"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2016/bus-sketches"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "These bus riders will change the way you think about commuting in Seattle",
+  "description": "A commute, a visit to friends or parents, a lift to school. A ride on a Metro bus can be a lot of things. And the people riding them can be a lot of things, too.",
+  "url": "http://projects.seattletimes.com/2016/bus-sketches/",
   "slug": "",
   "tags": [],
   "image": "assets/social.jpg",
   "sheets": ["14mYlsxH7tcXiGGWXGAU6LDQ9LDtlQ_Hl26zUESuZrsQ"],
   "production": false,
-  "embedded": true
+  "embedded": false
 }
