@@ -16,6 +16,6 @@
   "tags": [],
   "image": "assets/social.jpg",
   "sheets": ["14mYlsxH7tcXiGGWXGAU6LDQ9LDtlQ_Hl26zUESuZrsQ"],
-  "production": false,
+  "production": true,
   "embedded": false
 }
